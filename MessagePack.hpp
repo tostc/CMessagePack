@@ -595,7 +595,7 @@ class CMessagePack
                 case MsgFormats::STR8:
                 case MsgFormats::BIN8:
                 {
-                    Ret = m_Data[++Pos];
+                    Ret = (uint8_t)m_Data[++Pos];
                 }break;
 
                 case MsgFormats::STR16:
